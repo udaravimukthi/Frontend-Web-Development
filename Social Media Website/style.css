@@ -336,6 +336,13 @@ nav{
     overflow: hidden;
     top: 108%;
     right:5%;
+    max-height: 0;
+    transition: max-height 0.3s;
+}
+
+/* only add in css file */
+.settings-menu-height{
+    max-height: 450px;
 }
 
 .user-profile{
@@ -370,4 +377,30 @@ nav{
     justify-content: space-between;
     text-decoration: none;
     color: #626262;
+}
+#dark-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ccc;
+    width: 45px;
+    border-radius: 50px;
+    padding: 2px 3px;
+    cursor: pointer;
+    display: flex;
+    transition: padding-left 0.5s, background 0.5s;
+}
+
+#dark-btn span{
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#dark-btn.dark-btn-on{
+    padding: 23px;
+    background: #000;
+
 }
