@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-profile',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
-
+  email = new FormControl();
+  password = new FormControl();
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  save(){
+    alert(this.email.value);
+    alert(this.password.value);
   }
 
 }
