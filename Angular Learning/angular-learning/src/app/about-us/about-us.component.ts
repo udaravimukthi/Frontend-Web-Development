@@ -12,4 +12,9 @@ export class AboutUsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  show(){
+    alert('hello uv');
+    console.log('uv');
+  }
+
 }
