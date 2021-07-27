@@ -30,4 +30,9 @@ export class AboutUsComponent implements OnInit {
     console.log('uv');
   }
 
+  done(){
+    alert('done');
+    console.log('done');
+  }
+
 }
