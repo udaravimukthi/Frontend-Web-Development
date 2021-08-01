@@ -1,0 +1,50 @@
+<!-- <button mat-button color="primary">Primary</button>
+<button mat-button color="accent">Accent</button>
+<button mat-button color="warn">Warn</button><br><br>
+<button mat-raised-button color="accent">Accent</button><br><br>
+<button mat-stroked-button color="primary">Primary</button><br><br>
+<button mat-flat-button color="warn">Warn</button><br><br>
+<button mat-icon-button color="warn" aria-label="Example icon button with a heart icon"></button><br><br> -->
+<!-- <button mat-mini-fab disabled aria-label="Example icon button with a home icon"></button><br><br> -->
+<div class="wrapper">
+<br>
+
+<form class="example-form">
+  <mat-form-field appearance = "fill" color= "warn">
+    <mat-label>First Name</mat-label>
+    <input matInput placeholder="Name" value="Sushi">
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance = "fill">
+    <mat-label>Last Name</mat-label>
+    <input matInput placeholder="L Name" value="Lakshan">
+  </mat-form-field>
+</form>
+
+<br>
+<mat-chip-list aria-label="Fish selection">
+  <mat-chip>One fish</mat-chip>
+  <mat-chip>Two fish</mat-chip>
+  <mat-chip color="primary" selected>Primary fish</mat-chip>
+  <mat-chip color="accent" selected>Accent fish</mat-chip>
+</mat-chip-list>
+
+<br>
+
+<mat-form-field class="example-chip-list">
+  <mat-label>Favorite Fruits</mat-label>
+  <mat-chip-list #chipList aria-label="Fruit selection">
+    <mat-chip *ngFor="let fruit of fruits" [selectable]="selectable"
+             [removable]="removable" (removed)="remove(fruit)">
+      {{fruit.name}}
+      <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+    </mat-chip>
+    <input placeholder="New fruit..."
+           [matChipInputFor]="chipList"
+           [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+           [matChipInputAddOnBlur]="addOnBlur"
+           (matChipInputTokenEnd)="add($event)">
+  </mat-chip-list>
+</mat-form-field>
+</div>
+
