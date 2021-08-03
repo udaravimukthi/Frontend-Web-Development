@@ -1,0 +1,74 @@
+<!-- <mat-grid-list cols="3" rowHeight="1:1">
+    <mat-grid-tile>
+
+    </mat-grid-tile>
+    <mat-grid-tile>
+        
+        
+    </mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+  </mat-grid-list> -->
+
+  <mat-grid-list cols="4" rowHeight="100px">
+  <mat-grid-tile [colspan]=1 [rowspan]=3>
+    <div class= "ne1">
+      <mat-form-field appearance="fill">
+          <mat-label>Input</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Select</mat-label>
+          <mat-select>
+            <mat-option value="one">First option</mat-option>
+            <mat-option value="two">Second option</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Textarea</mat-label>
+          <textarea matInput></textarea>
+        </mat-form-field>
+  </div>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]=2 [rowspan]=3>
+    <div class="ne2">
+      <mat-card>
+          <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Favorite food</mat-label>
+      <input matInput placeholder="Ex. Pizza" value="Sushi">
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <mat-label>Favorite food</mat-label>
+      <input matInput placeholder="Ex. Pizza" value="Sushi">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Favorite food</mat-label>
+      <input matInput placeholder="Ex. Pizza" value="Sushi">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Favorite food</mat-label>
+      <input matInput placeholder="Ex. Pizza" value="Sushi">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Favorite food</mat-label>
+      <input matInput placeholder="Ex. Pizza" value="Sushi">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Favorite food</mat-label>
+      <input matInput placeholder="Ex. Pizza" value="Sushi">
+    </mat-form-field>
+  </form>
+  
+      </mat-card>
+  </div>
+  <button class="bt-mid" mat-flat-button color="primary">Primary</button>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]=1 [rowspan]=3>
+      content3
+  </mat-grid-tile>
+  </mat-grid-list>
