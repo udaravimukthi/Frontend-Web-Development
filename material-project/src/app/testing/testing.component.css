@@ -1,0 +1,33 @@
+.ne1{
+    margin-top:40px;
+    margin-left:40px;
+    height: 300px;
+    width: 300px;
+}
+
+
+
+.ne2{
+   margin-top:1px;
+   margin-left:10px;
+   height: 300px;
+   width: 650px;
+}
+/* mat-grid-tile {
+    background: lightblue;
+  } */
+  /* :host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  } */
+
+  mat-grid-tile {
+    background: lightblue;
+    /* height: 900px; */
+  } 
+
+  .bt-mid{
+    margin-top:8cm;
+    margin-left: 1cm;
+  }
