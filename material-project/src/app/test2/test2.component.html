@@ -1,0 +1,98 @@
+<mat-grid-list cols="5" rowHeight="90px">
+    <mat-grid-tile class="tile-bc" [colspan]=1 [rowspan]=6></mat-grid-tile>
+    <mat-grid-tile class="tile2a" [colspan]=3 [rowspan]=6>
+          <mat-card class="my-card">
+            <span><b>Edit Profile Settings</b></span><br><br>
+             <mat-card-content>
+                <form class="my-form">
+                    <img [src]="url" height="80" width="80"> <br/>
+                    <input type='file' (change)="onSelectFile($event)"><br><br>
+                    <mat-form-field class="full-width">
+                        <mat-label><b>First Name</b></mat-label>
+                        <input matInput placeholder="First name" value="Yohan" name="fname" required>
+                    </mat-form-field><br>
+                    <mat-form-field class="full-width">
+                        <mat-label><b>Last Name</b></mat-label>
+                        <input  matInput  placeholder="Last Name" value="Blake" name="lname"  required>
+                    </mat-form-field><br>
+                    <mat-form-field class="full-width">
+                        <mat-label><b>Index</b></mat-label>
+                        <input  matInput  placeholder="index" value="174066K" name="index" >
+                    </mat-form-field><br>
+                    <mat-form-field class="full-width">
+                        <mat-label><b>Level</b></mat-label>
+                        <input  matInput  placeholder="level" value="Final Year Undergraduate" name="Level">
+                    </mat-form-field><br>
+                    <mat-form-field class="full-width">
+                        <mat-label><b>Faculty</b></mat-label>
+                        <input  matInput  placeholder="faculty" value="Faculty of Information Technology" name="faculty">
+                    </mat-form-field>
+                    <mat-form-field class="full-width">
+                        <mat-label><b>Role</b></mat-label>
+                        <input  matInput  placeholder="role"  value="Instructor" name="role"  required>
+                    </mat-form-field><br>
+                </form>
+             </mat-card-content>
+          </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile class="tile-bc" [colspan]=1 [rowspan]=6></mat-grid-tile>
+</mat-grid-list> 
+
+<mat-grid-list cols="5" rowHeight="90px">
+    <mat-grid-tile class="tile-bc" [colspan]=1 [rowspan]=3></mat-grid-tile>
+    <mat-grid-tile class="tile2a" [colspan]=3 [rowspan]=3>
+        <mat-card class="my-card2">
+            <mat-card-content>
+                <form class="my-form2">
+                    <mat-form-field class="full-width">
+                        <mat-label><b>Academic Year</b></mat-label>
+                        <input  matInput  placeholder="academic year" value="2020/2021" name="academic year"  required>
+                    </mat-form-field><br>
+                    <mat-form-field class="full-width">
+                        <mat-label><b>Gender</b></mat-label>
+                        <input  matInput  placeholder="gender" value="Male" name="gender" required>
+                    </mat-form-field><br>
+                    <mat-form-field class="full-width">
+                        <mat-label><b>Main Subject Area</b></mat-label>
+                        <input  matInput  placeholder="main subject area"  value="Software Engineering" name="main subject area"  required>
+                    </mat-form-field><br>
+                    <mat-form-field class="full-width2">
+                        <mat-label><b>Subjects</b></mat-label>
+                        <input  matInput  placeholder="subjects" Value="Mathematics ,Java ,C,OOP ,C#" name="subjects"  required>
+                    </mat-form-field><br>
+                    <mat-form-field class="full-width2">
+                        <mat-label><b>Other Information</b></mat-label>
+                        <input matInput  placeholder="other information" value="Responible,self Motivated , dedicated Undergraduate" name="other information"  required>
+                    </mat-form-field><br><br>
+                </form>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile class="tile-bc" [colspan]=1 [rowspan]=3></mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list cols="5" rowHeight="90px">
+    <mat-grid-tile class="tile-bc" [colspan]=1 [rowspan]=3></mat-grid-tile>
+    <mat-grid-tile class="tile2a" [colspan]=3 [rowspan]=3>
+        <mat-card class="my-card3">
+            <mat-card-content>
+               <form class="my-form3">
+                 <span><b>Appointment Detail Settings</b></span><br><br>
+                    <mat-form-field class="full-width">
+                        <mat-label><b>Working Hours</b></mat-label>
+                        <input  matInput  placeholder="working hours"  value="4 Hours" name="working hours"  required>
+                    </mat-form-field>
+                    <mat-form-field class="full-width">
+                        <mat-label><b>Fee Per Session</b></mat-label>
+                        <input  matInput  placeholder="fee per session" value="Rs.1500" name="fee per session"  required>
+                    </mat-form-field>
+                    <mat-card-actions>
+                        <button mat-raised-button (click)="save()" color="primary">Save Details</button>
+                    </mat-card-actions>
+               </form>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile class="tile-bc" [colspan]=1 [rowspan]=3></mat-grid-tile>
+</mat-grid-list>
+

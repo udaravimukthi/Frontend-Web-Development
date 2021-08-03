@@ -1,0 +1,31 @@
+.tile2a{
+    background: green;
+    height: 460px;
+}
+.tile-bc{
+    background-color: #c4b7a6;
+}
+.my-card{
+    margin-top: -0.4cm;
+}
+.my-card2{
+    padding-top:-70px;
+}
+.my-form{
+    width: 360px;
+    height: 450px;
+}
+.my-form2{
+    width: 360px;
+    height: 270px;
+}
+.my-form3{
+    width: 360px;
+    height: 200px;
+}
+.full-width {
+    width: 75%;
+}
+.full-width2{
+    width: 100%;
+}
